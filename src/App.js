@@ -49,28 +49,53 @@ export default function App() {
               />
             </div>
           </div>
-          <div className="col-start-4 col-span-7">
+          <div className="col-start-4 flex items-center col-span-7">
             {/* Content of the second div */}
             <ul>
-              <li>
-                <span>Name: </span>
-                <span>{`${userInfo.name.title} ${userInfo.name.first} ${userInfo.name.last}`}</span>
+              <li className="flex">
+                <span
+                  className="text font-semibold text-xl "
+                  style={{ width: "80px", display: "inline-block" }}
+                >
+                  Name
+                </span>
+                <span className="text-base">{`${userInfo.name.title} ${userInfo.name.first} ${userInfo.name.last}`}</span>
               </li>
-              <li>
-                <span>Email:</span>
-                <span>{`${userInfo.email}`}</span>
+              <li className="flex">
+                <span
+                  className="text font-semibold text-xl "
+                  style={{ width: "80px", display: "inline-block" }}
+                >
+                  Email
+                </span>
+                <span className="text-base">{`${userInfo.email}`}</span>
               </li>
-              <li>
-                <span>Phone:</span>
-                <span>{`${userInfo.phone}`}</span>
+              <li className="flex">
+                <span
+                  className="text font-semibold text-xl "
+                  style={{ width: "80px", display: "inline-block" }}
+                >
+                  Phone
+                </span>
+                <span className="text-base">{`${userInfo.phone}`}</span>
               </li>
-              <li>
-                <span>Gender:</span>
-                <span>{`${userInfo.gender}`}</span>
+              <li className="flex">
+                <span
+                  className="text font-semibold text-xl "
+                  style={{ width: "80px", display: "inline-block" }}
+                >
+                  Gender
+                </span>
+                <span className="text-base">{`${userInfo.gender}`}</span>
               </li>
-              <li>
-                <span>Age:</span>
-                <span>{`${userInfo.dob.age}`}</span>
+              <li className="flex">
+                <span
+                  className="text font-semibold text-xl "
+                  style={{ width: "80px", display: "inline-block" }}
+                >
+                  Age
+                </span>
+                <span className="text-base">{`${userInfo.dob.age}`}</span>
               </li>
             </ul>
           </div>
