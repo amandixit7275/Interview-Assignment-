@@ -31,10 +31,10 @@ export default function App() {
   return (
     <div className="flex justify-center items-center  w-100 min-h-screen ">
       <div
-        className="shadow-md rounded-md flex items-center pl-8 pr-8 "
+        className=" border-solid border-2 border-indigo-600 bg-slate-600 shadow-md rounded-md flex items-center pl-8 pr-8 "
         style={{ minHeight: "300px", minWidth: "300px", maxWidth: "700px" }}
       >
-        <div className="grid grid-cols-10 gap-4 h-full">
+        <div className="border-solid border-2 p-7 bg-slate-300 rounded-2xl border-indigo-600 grid grid-cols-10 gap-4 h-full">
           <div className="col-start-1 col-span-3  ">
             {/* Content of the first div */}
             <div
@@ -42,6 +42,7 @@ export default function App() {
               style={{ width: "175px", height: "175px" }}
             >
               <img
+                className="p-4 border-solid border-teal-600 shadow-xl  "
                 src={userInfo.picture?.large}
                 alt="Profile Picture"
                 width={"100%"}
